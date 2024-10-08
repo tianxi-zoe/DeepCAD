@@ -14,7 +14,7 @@ from deepcad.movie_display import display
 from deepcad.utils import get_first_filename,download_demo
 
 datasets_path = '/home/zoez/projects/def-cbrown/zoez/10ms'  # folder containing tif files for testing
-denoise_model = 'Temp_2'  # A folder containing pth models to be tested
+denoise_model = 'Model'  # A folder containing pth models to be tested
 
 # %% First setup some parameters for testing
 test_datasize = 100000                # the number of frames to be tested
