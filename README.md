@@ -15,7 +15,7 @@ DeepCAD denoising method was used and adjusted based on the original base model 
 
 	 (ENV)[name@server ~]$ module load python/3.8
 
-	 (ENV)[name@server ~]$ pip install --no-index --upgrade pip```
+	 (ENV)[name@server ~]$ pip install --no-index --upgrade pip
 5. To request a job using CPU or GPU resouces, you can do
      - `salloc --time=2:30:0 --ntasks=1 --gres=gpu:1 --cpus-per-task=6 --mem-per-cpu=8000M --account=def-someuser`
      - submit a `.sh` job script, refer to `train.sh` or [this page](https://docs.alliancecan.ca/wiki/Running_jobs#GPU_job). 
@@ -24,9 +24,11 @@ DeepCAD denoising method was used and adjusted based on the original base model 
      To check the disk usage, run the command `diskusage_report`.
 ## 2. Set up DeepCAD in your virtual environment
 1. Clone the **master ** branch into your local or cloud path
-	`git clone -b master https://github.com/tianxi-zoe/DeepCAD.git` 
+
+	`git clone -b master https://github.com/tianxi-zoe/DeepCAD.git`
+
 	`cd DeepCAD`
-2. Install all the packages required
+3. Install all the packages required
 	`pip install -r requirements.txt`
 	
 ## 3. Test new calcium flicker movies with exsiting model
